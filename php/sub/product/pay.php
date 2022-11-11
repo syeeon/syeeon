@@ -174,20 +174,15 @@
                         <br><input type="text" id="pay_name" class="pay_name">
                     </div>
                     
-                    <span class="">
+                    <span class="cash_bill_wrap">
                         <input type="radio" id="pers" name="cash_bill" class="">
                         <label for="pers">개인</label>
-                    </span>
-                    
-                    <span class="">
                         <input type="radio" id="busine" name="cash_bill" class="">
                         <label for="busine">사업자</label>
-                    </span>
-
-                    <div>
-                        <label for="cash_nu">핸드폰번호</label>
+                        <br><label for="cash_nu">핸드폰번호</label>
                         <br><input type="text" id= "cash_nu" name="cash_nu" class="">
-                    </div>
+                    </span>
+                
                     
                 </div>
                 <span class="last_chk">

@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <form name="id_check" action="id_check_result.html" method="get">
+    <form name="id_check" action="id_check_result.php" method="get">
         <fieldset>
             <legend>아이디 검색</legend>
             <p>

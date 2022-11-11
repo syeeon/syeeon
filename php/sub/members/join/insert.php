@@ -29,7 +29,7 @@ $join_date = date("Y-m-d");
 // exit;
 
 //데이터 연결하기
-include "../../../../inc/dbcon.php";
+include "../../../inc/dbcon.php";
 
 // 쿼리 작성하기
 $sql = "insert into members(u_name, u_id, pwd, mobile, addr, email, birth, join_date) values('$u_name', '$u_id', '$pwd', '$mobile', '$addr', '$email', '$birth', '$join_date');";

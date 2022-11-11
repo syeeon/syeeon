@@ -221,3 +221,7 @@ form  div{
     background:#fff;
     color: #735646;
 }
+
+.bill_wrap, .pay_name_wrap, .cash_bill_wrap{
+    display: none;;
+}

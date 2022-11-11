@@ -103,10 +103,6 @@ function formCheck(){
         return false;
     }
 
-    
-    
-    
-    
 }
 
 function sample6_execDaumPostcode() {
@@ -155,7 +151,7 @@ function sample6_execDaumPostcode() {
                 document.getElementById("sample6_detailAddress").focus();
             }
         }).open();
-    }
+}
 
     
     function change_email(){
@@ -176,7 +172,6 @@ function sample6_execDaumPostcode() {
         });
     };
 
-    sample6_execDaumPostcode()
-    function id_check(){
-        window.open("../../html/sub/login/id_check.html","","width=600px height=300px")
+    function idCheck(){
+        window.open("id_check.php","","width=600px height=300px")
     }

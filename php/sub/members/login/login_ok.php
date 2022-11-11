@@ -1,3 +1,6 @@
+<?php
+include "../../inc/session.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -22,7 +25,7 @@
                 <p>LOGOUT</p>
                 <h2>ACCOUNT</h2>
                 <label class="txt">이름</label>
-                <span class="name txt">syeeon</span>
+                <span class="name txt"><?php echo $login_id; ?></span>
                 <a href="#" class="txt link">회원정보 수정</a>
             </div>
             <div class="order_box">

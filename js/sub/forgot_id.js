@@ -24,5 +24,5 @@ function formCheck(){
         return false;
     };
 
-    window.open("id_result.html","")
+    window.open("id_result.php","")
     }

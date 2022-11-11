@@ -37,7 +37,7 @@
                                     <label for="u_id" class="c_title">아이디</label>
                                     <span class="text_wrap">
                                         <input type="text" id="u_id" name="u_id" class="txt_box">
-                                        <button type="button" class="chk_btn" onclick="id_check()">중복 확인</button>
+                                        <button type="button" class="chk_btn" onclick="idCheck()">중복 확인</button>
                                         <br><span class="exp">아이디는 4~12자만 입력이 가능합니다.</span>
                                         <span id="err_id" class="err_txt"></span>
                                     </span>

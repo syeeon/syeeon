@@ -115,19 +115,13 @@ function address_check(){
 
 
 
-    // var imagine = document.getElementById('bil_chk')
-    // imagine.addEventListener('onchange',function(){
-    //     imagine.cl.toggle("bill_wrap")
+$(document).ready(function(){
 
-    // })
+  $('#imagine').change(function(){
+    $('$bill_wrap').show();
+  })
 
-    // $(document).ready(function(){
-    //     $()
-    // })
-
-    // $("#imagine").click(function(){
-    //     $(".bill_wrap").hide()
-    // })
+});
 
 
 
