@@ -1,6 +1,9 @@
 <?php
 include '../../inc/session.php';
 
+$u_id = $_POST["u_id"];
+$pwd = $_POST["pwd"];
+
 include '../../inc/dbcon.php';
 
 $sql = "select * from members where idx = '$login_idx';";
@@ -38,6 +41,7 @@ $array = mysqli_fetch_array($send);
                         <legend class="blind">정보수정</legend>
                             <h2 class="title">회원 정보</h2>
                                 <div class="input_box">
+                                <input type="hidden" name="idx" value="<?php echo $array["login_idx"]; ?>">
                                     <label for="u_name" class="c_title">이름</label>
                                      <p><?php echo $login_name; ?></p>
                                 </div>

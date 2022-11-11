@@ -1,5 +1,12 @@
 <?php
 include "../../inc/session.php";
+
+include "../../inc/dbcon.php";
+$sql = "select * from members where idx = $login_idx;";
+$send = mysqli_query($dbcon, $sql);
+$array = mysqli_fetch_array($send);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -24,8 +31,9 @@ include "../../inc/session.php";
             <div class="account_box">
                 <p>LOGOUT</p>
                 <h2>ACCOUNT</h2>
+                <input type="hidden" name="idx" value="<?php echo $array["idx"]; ?>">
                 <label class="txt">이름</label>
-                <span class="name txt"><?php echo $login_id; ?></span>
+                <span class="name txt"><?php echo $array['$u_id']; ?></span>
                 <a href="#" class="txt link">회원정보 수정</a>
             </div>
             <div class="order_box">
