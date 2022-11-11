@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="../../css/basic.css">
+<header id="header" class="header">
+    <div class="header_wrap">
+        <h1 class="logo">
+            <a href="../index.php">이솝</a>
+        </h1>
+
+        <nav class="gnb">
+            <h2 class="blind">주요 메뉴</h2>
+            <ul>
+                <li class="menu n1"><a class="underline-hover-effect" href="#">BRAND</a></li>
+                <li class="menu n2"><a class="underline-hover-effect" href="#">SHOP</a>
+                    <ul class="two_dep dep_1">
+                        <li><a href="#" class="hover-effect">SKIN CARE</a></li>
+                        <li><a href="#" class="hover-effect">BODY&HAND</a></li>
+                        <li><a href="#" class="hover-effect">HAIR</a></li> 
+                        <li><a href="#" class="hover-effect">FRAGRANCE</a></li>
+                        <li><a href="#" class="hover-effect">HOME</a></li> 
+                        <li><a href="#" class="hover-effect">KITS&TRAVEL</a></li> 
+                    </ul>
+                </li>
+                <li class="menu n3"><a class="underline-hover-effect" href="#">GIFTS</a></li>
+                <li class="menu n4"><a class="underline-hover-effect" href="#">INFO</a>
+                    <ul class="two_dep dep_2">
+                        <li><a href="notice.html" class="hover-effect">NOTICE</a></li>
+                        <li><a href="qa.html" class="hover-effect">F&A</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="top_menu">
+            <h2 class="blind">사용자 메뉴</h2>
+            <ul>
+                <!-- <li class="menu n1"><a href="#">SEARCH</a></li> -->
+                <li class="menu n1">        
+                    <div>
+                        <form>
+                            <fieldset>
+                            <legend class="blind">검색</legend>
+                            <input type="text" class="n1_input" placeholder="SEARCH" >
+                            <!-- <button type="button">검색</button> -->
+                            </fieldset>
+                        </form>
+                    </div>
+                </li>
+                <li class="menu n2"><a href="">LOGIN</a></li>
+                <li class="menu n3"><a href="#">CART(0)</a></li>
+            </ul>
+        </div>
+        <div class="nav_bg"></div> 
+    </div>
+    
+    <!-- <div>
+        <form>
+            <fieldset>
+                <legend class="blind">검색</legend>
+                <input type="text">
+                <button type="button">검색</button>
+            </fieldset>
+            
+        </form>
+    </div> -->
+</header>

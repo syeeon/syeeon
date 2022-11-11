@@ -1,0 +1,5 @@
+<?php
+sesstion_start();
+
+
+?>
