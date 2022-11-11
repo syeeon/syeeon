@@ -2,14 +2,14 @@
 <header id="header" class="header">
     <div class="header_wrap">
         <h1 class="logo">
-            <a href="index.php">이솝</a>
+            <a href="../index.php">이솝</a>
         </h1>
 
         <nav class="gnb">
             <h2 class="blind">주요 메뉴</h2>
             <ul>
                 <li class="menu n1"><a class="underline-hover-effect" href="#">BRAND</a></li>
-                <li class="menu n2"><a class="underline-hover-effect" href="../shop.php">SHOP</a>
+                <li class="menu n2"><a class="underline-hover-effect" href="../sub/product/shop.php">SHOP</a>
                     <ul class="two_dep dep_1">
                         <li><a href="#" class="hover-effect">SKIN CARE</a></li>
                         <li><a href="#" class="hover-effect">BODY&HAND</a></li>
@@ -20,7 +20,7 @@
                     </ul>
                 </li>
                 <li class="menu n3"><a class="underline-hover-effect" href="#">GIFTS</a></li>
-                <li class="menu n4"><a class="underline-hover-effect" href="notice.php">INFO</a>
+                <li class="menu n4"><a class="underline-hover-effect" href="../sub/members/notice/notice.php">INFO</a>
                     <ul class="two_dep dep_2">
                         <li><a href="notice.php" class="hover-effect">NOTICE</a></li>
                         <li><a href="q&a.php" class="hover-effect">F&A</a></li>
