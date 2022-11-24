@@ -34,6 +34,13 @@ h2{
     font-size: 30px;
 }
 
+.cart_list, .cart_txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .return{
     font-size: 20px;
     display: block;
@@ -61,7 +68,6 @@ h2{
 }
 
 .list{
-    float: left;
     margin-right: 50px;
     line-height: 100px;
 }

@@ -4,17 +4,20 @@ function formCheck(){
     var pwd = document.getElementById("pwd")
     var pwd_chk = document.getElementById("pwd_chk")
     var mobile = document.getElementById("mobile")
-    var check_all =document.getElementById("check_all")
-    var check_1 =document.getElementById("check_1")
-    var check_2 =document.getElementById("check_2")
-    var check_3 =document.getElementById("check_3")
+    var ps_code = document.getElementById("sample6_postcode")
+    var addr_d = document.getElementById("sample6_detailAddress")
+    var birth = document.getElementById("birth")
+    var check_1 = document.getElementById("check_1")
+    var check_2 = document.getElementById("check_2")
+
+
     
     if(!u_name.value){
         var err = document.getElementById("err_name");
         err.innerHTML = "\* 이름을 입력하세요"
         u_name.focus();
         return false;
-    }
+    };
 
     var nameRule = /^[가-힣a-zA-Z]+$/;
     if(!nameRule.test(u_name.value)){
@@ -22,22 +25,22 @@ function formCheck(){
         err.innerHTML = "\* 이름은 한글 or 영문만 입력이 가능합니다"
         u_name.focus();
         return false;
-    }
+    };
 
     if(!u_id.value){
         var err = document.getElementById("err_id");
         err.innerHTML = "\* 아이디를 입력하세요"
         u_id.focus();
         return false;
-    }
+    };
 
     var idRule =/^[a-z0-9_-]{4,12}$/;
     if(!idRule.test(u_id.value)){
         var err = document.getElementById('err_id');
-        err.innerHTML = "\* 소문자 + 숫자 + 언더바/하이픈 허용 4~12자만 입력이 가능합니다"
+        err.innerHTML = "\* 소문자 + 숫자 + -,/ 허용 4~12자만 입력이 가능합니다"
         u_id.focus();
         return false;
-    }
+    };
 
 
     if(!pwd.value){
@@ -45,16 +48,16 @@ function formCheck(){
         err.innerHTML = "\* 비밀번호를 입력하세요"
         pwd.focus();
         return false;
-    }
+    };
 
     var regExp = /^.*(?=^.{4,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
     if(!regExp.test(pwd.value)){
         // console.log('xxx');
         var err = document.getElementById('err_pwd');
-        err.innerHTML = "\* 비밀번호는 영문 + 숫자 + 특수문자를 포함하여 8~15자만 작성해주세요."
+        err.innerHTML = "\* 영문 + 숫자 + 특수문자를 포함하여 작성해주세요."
         pwd.focus();
         return false;
-    }
+    };
 
 
     if(!pwd_chk.value){
@@ -62,14 +65,14 @@ function formCheck(){
         err.innerHTML = "\* 비밀번호를 입력하세요"
         pwd_chk.focus();
         return false;
-    }
+    };
 
     if(pwd.value != pwd_chk.value){
         var err = document.getElementById("err_pwd_chk");
         err.innerHTML = "\* 비밀번호가 일치하지 않습니다."
         pwd_chk.focus();
         return false;
-    }
+    };
 
 
     if(!mobile.value){
@@ -77,8 +80,7 @@ function formCheck(){
         err.innerHTML = "\* 연락처를 입력하세요"
         mobile.focus();
         return false;
-    }
-
+    };
 
     var mobileRule =  /^[0-9]+$/g;
     if(!mobileRule.test(mobile.value)){
@@ -86,24 +88,69 @@ function formCheck(){
         err.innerHTML = "\* 숫자만 입력 가능합니다.";
         mobile.focus();
         return false;
-    }
+    };
 
+    if(!ps_code.value){
+        var err = document.getElementById("err_psCode");
+        err.innerHTML = "\* 우편번호를 검색하세요"
+        ps_code.focus();
+        return false;
+        };
+    
+        if(!addr_d.value){
+        var err = document.getElementById("err_addr_d");
+        err.innerHTML = "\* 상세주소를 입력하세요"
+        addr_d.focus();
+        return false;
+        };
+
+
+    
     var email = document.getElementById("email_id")
     var email_dns = document.getElementById("email_dns")
-    if(email.value==="" || email_dns.value===""){
+    if(email.value===""){
         var err = document.getElementById("err_email")
-        err.innerHTML = "이메일을 입력하세요"
+        err.innerHTML = "\* 이메일을 입력하세요"
         email.focus();
         return false
-    }
+    } if(email_dns.value===""){
+        var err = document.getElementById("err_email")
+        err.innerHTML = "\* 도메인 주소를 입력하세요"
+        email_dns.focus();
+        return false
+    };
 
-    if(!check.checked){
-        var err = document.getElementById("err_apply")
-        err.innerHTML = "\* 필수약관을 읽어보시고 동의하셔야 됩니다."
+
+    if(!birth.value){
+        var err = document.getElementById("err_birth");
+        err.innerHTML = "\* 생년월일을 입력하세요"
+        birth.focus();
         return false;
-    }
+    };
 
-}
+    var birthRule =  /^[0-9]+$/g;
+    if(!birthRule.test(birth.value)){
+        var err = document.getElementById("err_birth");
+        err.innerHTML = "\* 숫자만 입력 가능합니다.";
+        birth.focus();
+        return false;
+    };
+
+    if(!check_1.checked){
+        var err = document.getElementById("err_check1")
+        err.innerHTML = "\* 필수약관을 읽어보시고 동의하셔야 됩니다."
+        check_1.focus();
+        return false;
+    };
+
+    if(!check_2.checked){
+        var err = document.getElementById("err_check2")
+        err.innerHTML = "\* 필수약관을 읽어보시고 동의하셔야 됩니다."
+        check_2.focus();
+        return false;
+    };
+
+};
 
 function sample6_execDaumPostcode() {
     new daum.Postcode({
@@ -138,10 +185,10 @@ function sample6_execDaumPostcode() {
                     extraAddr = ' (' + extraAddr + ')';
                 }
                 // 조합된 참고항목을 해당 필드에 넣는다.
-                //     document.getElementById("sample6_extraAddress").value = extraAddr;
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
                 
-                // } else {
-                    //     document.getElementById("sample6_extraAddress").value = '';
+                } else {
+                        document.getElementById("sample6_extraAddress").value = '';
                 }
                 
                 // 우편번호와 주소 정보를 해당 필드에 넣는다.
@@ -172,6 +219,14 @@ function sample6_execDaumPostcode() {
         });
     };
 
-    function idCheck(){
-        window.open("id_check.php","","width=600px height=300px")
-    }
+    // function idCheck(){
+    //     window.open("id_check.php?userId=<?php echo $userId; ?>","","width=600px height=300px")
+    // }
+
+    function member_del(){
+        var del_btn = confirm("정말 탈퇴하시겠습니까?");
+        if(del_btn == true){
+            location.href='member_del.php';
+        };
+    };
+

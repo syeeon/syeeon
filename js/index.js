@@ -1,23 +1,5 @@
 $(document).ready(function(){
 
-  /* gnb */
-  $(".gnb .n2").mouseenter(function(){
-    $(".gnb ul .dep_1, .nav_bg").stop().slideDown("fast")
-    })
-    
-    $(".dep_1, .nav_bg").mouseleave(function(){
-    $(".gnb ul ul, .nav_bg").stop().slideUp("fast")
-    })
-    
-    
-    $(".gnb .n4").mouseenter(function(){
-    $(".gnb ul .dep_2, .nav_bg").stop().slideDown("fast")
-    })
-    
-    $(".dep_2, .nav_bg").mouseleave(function(){
-    $(".gnb ul ul, .nav_bg").stop().slideUp("fast")
-    })
-
   $('.main_ban').slick({
       autoplay : true,
       dots: false,
@@ -44,7 +26,7 @@ $(document).ready(function(){
     $progressBarLabel1.text( calc + '% completed' );
   });
   $('.cont_box').slick({
-      autoplay : true,
+      autoplay :true,
       autoplaySpeed : 1000,
       slidesToShow: 3,     //한번에 보여줄 사진의 갯수(int)
       slidesToScroll: 1, 
@@ -75,7 +57,9 @@ $slider.slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 100,
-  arrows:true
+  arrows:true,
+  prevArrow : $('.content_3-prev'),
+  nextArrow : $('.content_3-next'),
 }); 
 
 })

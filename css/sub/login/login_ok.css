@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 .main{
     min-width: 1200px;
     margin: 0 auto 80px;
@@ -58,5 +60,14 @@
 .link{
     text-decoration: underline;
     color: rgb(104, 103, 103);
+}
+
+.name{
+    font-family: 'Playfair Display', "Minerva-Modern", "Noto Sans KR", "Arial", "나눔고딕", "맑은 고딕", "돋움";
+    font-weight: 400px;
+}
+
+.logout{
+    cursor: pointer;
 }
 

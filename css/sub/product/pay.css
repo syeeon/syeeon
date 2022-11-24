@@ -2,7 +2,7 @@
     min-width: 1200px;
     margin: 0 auto 80px;
     padding: 149px 0 80px;
-    background:  #F2F1F0  url(../../../../img/common/background.jpg) no-repeat;
+    background:  #F2F1F0  url(../../../img/common/background.jpg) no-repeat;
 }
 
 .cart, .cart_box{
@@ -24,7 +24,7 @@
 .cartbox_wrap{
     width: 1200px;
     background: #fff;
-    padding: 20px;
+    padding: 40px;
     margin: auto;
     overflow: hidden;
 }
@@ -80,7 +80,7 @@
     text-align: right;
     width: 300px;
     position: relative;
-    left: 780px;
+    left: 760px;
 }
 
 
@@ -121,9 +121,13 @@
     border: 1px solid #ddd;
 }
 
-form  div{
+.input_box{
     margin-bottom: 30px;
     margin-left: 60px;
+}
+
+.pay{
+    padding-top: 10px;
 }
 
 .phone{
@@ -131,21 +135,11 @@ form  div{
 }
 
 .service_wrap{
-    padding-left: 60px;
     margin-top: 60px;
 }
 
-.pay_box{
-    padding-left: 60px;
-}
-
-
 .pay_box label{
     margin-right: 10px;
-}
-
-.bill_wrap{
-    height: 50px;
 }
 
 .chk_btn{
@@ -186,12 +180,13 @@ form  div{
 
 .last_chk{
     display: block;
-    margin-right: 40px;
+    margin: 60px 40px 0px 0px;
     line-height: 2;
     text-align: right;
     width: 300px;
     position: relative;
     left: 780px;
+    
 }
 
 .last_chk span{
@@ -220,8 +215,4 @@ form  div{
     border:1px solid #735646;
     background:#fff;
     color: #735646;
-}
-
-.bill_wrap, .pay_name_wrap, .cash_bill_wrap{
-    display: none;;
 }

@@ -21,7 +21,7 @@
         <div class="wrap">
             <div class="white_box">
                 <p>메일로 아이디와 임시비밀번호가 발송되었습니다. </p>
-                <button type="button" class="btn" onclick="location.href='login.html'">로그인</button>
+                <button type="button" class="btn" onclick="location.href='login.php'">로그인</button>
             </div>
         </div>
     </main>

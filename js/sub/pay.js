@@ -37,17 +37,22 @@ function formCheck(){
         return false;
     }
 
-    // var email = document.getElementById("email")
-    // var email_dns = document.getElementById("email_dns")
-    // if(email.value==="" || email_dns.value===""){
-    //     var err = document.getElementById("err_email")
-    //     err.innerHTML = "이메일을 입력하세요"
-    //     email.focus();
-    //     return false
-    // }
+    var email = document.getElementById("email_id")
+    var email_dns = document.getElementById("email_dns")
+    if(email.value===""){
+        var err = document.getElementById("err_email")
+        err.innerHTML = "\* 이메일을 입력하세요"
+        email.focus();
+        return false
+    } if(email_dns.value===""){
+        var err = document.getElementById("err_email")
+        err.innerHTML = "\* 도메인 주소를 입력하세요"
+        email_dns.focus();
+        return false
+    };
 
 
-}
+};
 
         function sample6_execDaumPostcode() {
     new daum.Postcode({
@@ -112,16 +117,69 @@ function address_check(){
     window.open("address_check.html","","width=600px height=300px")
 }       
 
+function payEnd(){
+    alert("결제가 완료되었습니다 :)")
+    location.href='../../index.php'
+}
+
 
 
 
 $(document).ready(function(){
+    $(".bill_wrap").hide();
+    $(".pay_name_wrap").hide();
+    $(".cash_bill_wrap").hide();
 
-  $('#imagine').change(function(){
-    $('$bill_wrap').show();
-  })
+    $("input[class='card_pay']").change(function(){
+                $(".pay_name_wrap").hide();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").hide();
+        });
 
-});
+    $("input[class='phone_pay']").change(function(){
+                $(".pay_name_wrap").hide();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").hide();
+        });
 
+    $("input[class='kko_pay']").change(function(){
+                $(".pay_name_wrap").hide();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").hide();
+        });
+
+    $("input[class='toss']").change(function(){
+                $(".pay_name_wrap").hide();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").hide();
+        });
+
+    $("input[class='imagine']").change(function(){
+                $(".pay_name_wrap").hide();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").show();
+        });
+
+    $("input[class='send']").change(function(){
+                $(".pay_name_wrap").show();
+                $(".cash_bill_wrap").hide();
+                $(".bill_wrap").show();
+        });
+        $("input[class='bill_chk']").change(function(){
+                    $(".cash_bill_wrap").show();
+            });
+
+
+
+        $(".checkTo").click(function(){
+
+            if(($(".checkTo")).is(":checked")){
+                $(".name_val").val($(".u_name").val())
+                $(".mobile_val").val($(".mobile").val())
+            }
+        })
+        
+
+})
 
 

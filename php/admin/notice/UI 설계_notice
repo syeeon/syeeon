@@ -1,0 +1,21 @@
+** 테이블 설계 **
+
+인덱스    | idx        | int             | Ai, PK 
+카테고리  | cate       | varchar(15)     | nn
+제목      | ask        | varchar(100)    | nn
+내용      | answer     | text            | nn 
+작성자    | writer     | varchar(15)     | nn 
+작성일    | w_date     | date            | nn  
+조회수    | cnt        | int             | default 0
+
+//쿼리 작성
+
+create table notice(
+    idx int auto_increment primary key,
+    cate varchar(15) not null,
+    ask varchar(100) not null,
+    answer text not null,
+    writer varchar(15) not null,
+    w_date date not null,
+    cnt int default 0
+);

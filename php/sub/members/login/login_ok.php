@@ -2,10 +2,15 @@
 include "../../inc/session.php";
 
 include "../../inc/dbcon.php";
-$sql = "select * from members where idx = $login_idx;";
-$send = mysqli_query($dbcon, $sql);
-$array = mysqli_fetch_array($send);
 
+$sql = "select * from members where idx = $login_idx;";
+// echo $sql;
+// exit;
+$send = mysqli_query($dbcon, $sql);
+
+$array = mysqli_fetch_array($send);
+// echo $array["u_name"];
+// exit;
 
 ?>
 <!DOCTYPE html>
@@ -29,12 +34,12 @@ $array = mysqli_fetch_array($send);
         </section>
         <section class="mypage_wrap">
             <div class="account_box">
-                <p>LOGOUT</p>
+                <p class="logout" onclick="location.href='logout.php'">LOGOUT</p>
                 <h2>ACCOUNT</h2>
                 <input type="hidden" name="idx" value="<?php echo $array["idx"]; ?>">
                 <label class="txt">이름</label>
-                <span class="name txt"><?php echo $array['$u_id']; ?></span>
-                <a href="#" class="txt link">회원정보 수정</a>
+                <span class="name txt"><?php echo $array["u_name"]; ?></span>
+                <a href="member_chk.php" class="txt link">회원정보 수정</a>
             </div>
             <div class="order_box">
                 <h2>ORDER HISTORY</h2>
@@ -56,3 +61,4 @@ $array = mysqli_fetch_array($send);
     <?php include "../../../common/footer.php" ?>
 </body>
 </html>
+<?php mysqli_close($dbcon); ?>

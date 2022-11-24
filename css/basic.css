@@ -28,6 +28,11 @@ a {
 input,textarea{
     outline: none;
     padding: 10px;
+    font-family: inherit;
+}
+
+button{
+    font-family: inherit;
 }
 
 address {
@@ -93,7 +98,8 @@ address {
 }
 
 .header_wrap{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
     
@@ -166,9 +172,9 @@ address {
 
 
 .n1_input{
-    width: 93px;
-    height: 69px;
-    line-height: 69px;
+    width: 94px;
+    height: 70px;
+    line-height: 70px;
     background-color: transparent;
     text-decoration: underline;
     text-align: center;
@@ -177,8 +183,9 @@ address {
 /* footer */
 
 .footer{
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
 }
 
 .customer_service{
@@ -206,7 +213,7 @@ address {
 }
 
 .closed_day::before{
-    content: url(../img/common/ft_btn_da.png);
+    content: url(../img/common/ft_dtn_da.png);
     margin-right: 10px;
 }
 
@@ -221,6 +228,10 @@ address {
 
 .read,.contact{
     margin-right: 50px;
+}
+
+.bottom1, .bottom2{
+    line-height: 2;
 }
 
 /* term */
@@ -262,10 +273,6 @@ address {
 
 /* underline-hover-effect */
 
-.underline-hover-effect {
-    text-decoration: none;
-    color: inherit;
-  }
   
   .underline-hover-effect {
     display: inline-block;

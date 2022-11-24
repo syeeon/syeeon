@@ -11,6 +11,11 @@
     <script type="text/javascript" src="../../../../js/common/basic.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="../../../../js/sub/join.js"></script>
+    <script>
+    function idCheck(){
+        window.open("id_check.php?u_id=<?php echo $u_id; ?>","","width=600px height=300px")
+    }
+    </script>
 </head>
 <body>
 <?php include "../../../common/header.php" ?>
@@ -28,7 +33,7 @@
                                 <div class="input_box">
                                     <label for="u_name" class="c_title">이름</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="u_name" name="u_name" class="txt_box">
+                                        <input type="text" id="u_name" name="u_name" class="txt_box name">
                                         <span id="err_name" class="err_txt"></span>
                                     </span>
                                 </div>
@@ -36,19 +41,19 @@
                                 <div class="input_box">
                                     <label for="u_id" class="c_title">아이디</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="u_id" name="u_id" class="txt_box">
+                                        <input type="text" id="u_id" name="u_id" class="txt_box name">
                                         <button type="button" class="chk_btn" onclick="idCheck()">중복 확인</button>
-                                        <br><span class="exp">아이디는 4~12자만 입력이 가능합니다.</span>
-                                        <span id="err_id" class="err_txt"></span>
+                                        <span class="exp">아이디는 4~12자만 입력이 가능합니다.</span>
+                                        <br><span id="err_id" class="err2_txt"></span>
                                     </span>
                                 </div>
 
                                 <div class="input_box">
                                     <label for="pwd" class="c_title">비밀번호</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="pwd" name="pwd" class="txt_box">
+                                        <input type="password" id="pwd" name="pwd" class="txt_box">
                                         <span class="exp">비밀번호는 4~16자로 입력해 주세요.</span>
-                                        <span id="err_pwd" class="err_txt"></span>
+                                        <br><span id="err_pwd" class="err2_txt"></span>
                                     </span>
                                 </div>
 
@@ -56,7 +61,7 @@
                                 <div class="input_box">
                                     <label for="pwd_chk" class="c_title">비밀번호 확인</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="pwd_chk" name="pwd_chk" class="txt_box">
+                                        <input type="password" id="pwd_chk" name="pwd_chk" class="txt_box">
                                         <span id="err_pwd_chk" class="err_txt"></span>
                                     </span>
                                 </div>
@@ -66,24 +71,30 @@
                                     <span class="text_wrap">
                                         <input type="text" id="mobile" name="mobile" class="txt_box">
                                         <span class="exp">" - " 없이 숫자만 입력해주세요.</span>
-                                        <span id="err_mobile" class="err_txt"></span>
+                                        <span id="err_mobile" class="err2_txt"></span>
                                     </span>
                                 </div>
 
                                 <div class="input_box">
                                     <label for="address1" class="c_title">우편번호</label>
-                                    <input type="text"  id="sample6_postcode" name="sample6_postcode" placeholder="우편번호" size="8px" class="short_txt_box">
+                                    <input type="text"  id="sample6_postcode" name="sample6_postcode" size="8px" class="short_txt_box">
                                     <button type="button" class="chk_btn" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">우편번호 검색</button>
+                                    <span id="err_psCode" class="err_pscode"></span>
                                 </div>
 
                                 <div class="input_box"> 
                                     <label for="sample6_address" class="c_title">기본주소</label>
-                                    <input type="text" id="sample6_address" placeholder="주소" name="sample6_address" class="txt_box">
+                                    <input type="text" id="sample6_address" name="sample6_address" class="txt_box">
                                 </div>
                                 <div class="input_box">
                                     <label for="sample6_detailAddress" class="c_title">상세주소</label>
-                                    <input type="text" id="sample6_detailAddress" name="sample6_detailAddress"  placeholder="상세주소" class="txt_box">
+                                    <span class="text_wrap">
+                                    <input type="text" id="sample6_detailAddress" name="sample6_detailAddress" class="txt_box">
+                                        <span id="err_addr_d" class="err_txt"></span>
+                                    </span>
+                                 
                                 </div>
+                                <span id="err_addr" class="err_txt"></span>
 
 
                                 <div class="input_box">
@@ -103,7 +114,11 @@
 
                                 <div class="input_box">
                                     <label for="birth" class="c_title">생년월일</label>
-                                    <input type="text" id="birth" name="birth" maxlength="8" placeholder="YYYY-MM-DD">
+                                    <span class="text_wrap">
+                                        <input type="text" id="birth" name="birth" class="txt_box" maxlength="8" placeholder="YYYY-MM-DD">
+                                        <span class="exp">" - " 없이 숫자만 입력해주세요.</span>
+                                        <span id="err_birth" class="err2_txt"></span>
+                                    </span>
                                 </div>
             </section>
             <section class="content3">
@@ -268,6 +283,7 @@
                         <p>본 이용약관은 2022년 6월 30일부터 효력을 가집니다. 약관이 업데이트가 되는 경우 고객님께 고지를 하며, 최신 또는 이전 이용약관은 아래와 같이 확인이 가능합니다.</p>
                         <p><a href="https://www.aesop.com/kr/r/terms-kr-6-30/" target="_blank"><span style="text-decoration: underline;">이용약관 (2022.6.30.이전)</span></a></p>
                     </div>
+                    <p id="err_check1" class="err_apply"></p>
                 </div>
 
       
@@ -310,20 +326,17 @@
                             기간: 3개월
                             </span>고객님께서는 개인정보 수집 및 이용 조건에 동의하지 않으셔도 됩니다만, 그러한 경우, 회원가입과 멤버쉽 서비스 제공이 어려운 점 양해바랍니다. </p>
                         </div>
+                        <p id="err_check2" class="err_apply"></p>
                 </div>
-                        
-                        
-                        
                 <div class="box_wrap">
                     <div class="chk_box">
                         <label class="check_title"><input class="normal" type="checkbox" id="check_3" name="apply">마케팅 정보 수신에 동의합니다. (선택)</label>
                     </div>
-                    <div class="texbox_3" onc>
+                    <div class="texbox_3">
                         <p>마케팅 정보 수신 동의 (선택)</p>
                         <p>이솝은 고객님의 개인정보를 사용하여 <span style="text-decoration: underline;">이솝의 제품, 서비스 및 홍보 행사 관련 정보를 마케팅 목적으로</span>, <span style="text-decoration: underline;">고객님이 동의 해지하시기 전까지</span>, 고객님께 보내 드립니다.<br>
                             개인정보 수집 및 이용 그리고 마케팅 정보 수령에 동의하지 않으셔도 됩니다. 그러한 경우, 고객님께서는 마케팅 정보를 수령하실 수 없습니다.</p>
                     </div>
-                    <br><p id="err_apply" class="err_txt apply_txt"></p>
                 </div>
 
                 <div class="button_wrop">

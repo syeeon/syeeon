@@ -5,21 +5,21 @@ function formCheck(){
 
     if(!u_pwd.value){
         var err = document.getElementById("err_pwd")
-        err.innerHTML = "비밀번호를 입력하세요."
+        err.innerHTML = "\* 비밀번호를 입력하세요."
         u_pwd.focus();
         return false;
     }
 
     if(!u_title.value){
         var err = document.getElementById("err_title")
-        err.innerHTML = "제목을 입력하세요."
+        err.innerHTML = "\* 제목을 입력하세요."
         u_title.focus();
         return false;
     }
 
     if(!u_content.value){
         var err = document.getElementById("err_content")
-        err.innerHTML = "내용을 입력하세요."
+        err.innerHTML = "*\ 내용을 입력하세요."
         u_content.focus();
         return false;
     }

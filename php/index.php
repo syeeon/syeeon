@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이솝</title>
-    <link rel="stylesheet" type="text/css" href="../js/plug-in/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="../css/basic.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    
-    <script type="text/javascript" src="../js/common/jquery-3.6.1.min.js"></script>
-    <script src="../js/plug-in/rainyday.min.js"></script>
-    <script src="../js/plug-in/slick-1.8.1/slick/slick.js"></script>
-    <script src="../js/index.js"></script>
-</head>
-<body>
-    <?php include "common/header.php" ?>
+    <?php include "common/index_header.php" ?>
     <main id="main" class="main">
         <section class="content_1">
             <div class="main_ban">
@@ -70,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="arrow_wr">
+            <div class="arrow_wrap">
                 <button type="button" data-role="none" class="slick-prev" aria-label="previous" >Previous</button>
                 <button type="button" data-role="none" class="slick-next" aria-label="next" >Next</button>
             </div>
@@ -108,7 +91,7 @@
                     </div>
                         <span class="blind">상품으로 이동하기</span>
                     <dl>
-                        <dt>세이지 앤 징크 페이셜 하이드레이팅 로션</dt>
+                        <dt class="long_txt">세이지 앤 징크 페이셜 하이드레이팅 로션</dt>
                         <dd>자외선을 차단하는 데일리 하이드레이터</dd>
                     </dl>
                 </a>
@@ -209,19 +192,23 @@
                 위한 맞춤형 컨설팅을 제공해드힙니다.</p> 
                 <a class="text2" href="#">스토어 찾기</a>
             </div>
-                <div class="store_wrap">
-                    <div class="img_box">
-                        <img src="../img/index/st_slick_img_01.jpg" alt="이솝 파르나스">
-                        <p>이솝 파르나스</p>
-                    </div>
-                    <div class="img_box">
-                        <img src="../img/index/st_slick_img_02.jpg" alt="이솝 성수 매장 이미지">
-                        <p>이솝 성수</p>
-                    </div>
-                    <div class="img_box">
-                        <img src="../img/index/st_slick_img_03.jpg" alt="이솝 한남 매장 이미지">
-                        <p>이솝 한남</p>
-                    </div>
+            <div class="store_wrap">
+                <div class="img_box">
+                    <img src="../img/index/st_slick_img_01.jpg" alt="이솝 파르나스">
+                    <p>이솝 파르나스</p>
+                </div>
+                <div class="img_box">
+                    <img src="../img/index/st_slick_img_02.jpg" alt="이솝 성수 매장 이미지">
+                    <p>이솝 성수</p>
+                </div>
+                <div class="img_box">
+                    <img src="../img/index/st_slick_img_03.jpg" alt="이솝 한남 매장 이미지">
+                    <p>이솝 한남</p>
+                </div>
+            </div>
+                <div class="arrow_wrap">
+                <button type="button" data-role="none" class="content_3-prev" aria-label="previous" >Previous</button>
+                <button type="button" data-role="none" class="content_3-next" aria-label="next" >Next</button>
                 </div>
                 <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                     <span class="slider__label sr-only"></span>

@@ -11,15 +11,16 @@ $pwd = $_POST["pwd"];
 include "../../inc/dbcon.php";
 
 //쿼리 작성
-$sql = "select idx, u_id, pwd from members where u_id = '$u_id';";
+$sql = "select idx, u_name, u_id, pwd from members where u_id = '$u_id';";
 // echo $sql;
-
+// exit;
 //쿼리 전송
 $send = mysqli_query($dbcon, $sql);
 
 // select - DB에서 데이터 가져오기
 $num = mysqli_num_rows($send);
 // echo $num;
+// exit;
 
 if(!$num){
     echo "
@@ -39,28 +40,35 @@ if(!$num){
         </script>";
     } else{
         
+        // 세션 변수 생성
+        $_SESSION["login_idx"] = $array["idx"];
+        $_SESSION["login_name"] = $array["u_name"];
+        $_SESSION["login_id"] = $array["u_id"];
+        $_SESSION["login_pwd"] = $array["pwd"];
+
+        // echo $_SESSION["login_idx"];
+        // echo $_SESSION["login_name"];
+        // echo $_SESSION["login_id"];
+        // echo $_SESSION["login_pwd"];
+        // exit;
         echo "
         <script type='text/javascript'>
         alert('{$u_id}.님 안녕하세요 :)');
         location.href = 'login_ok.php';
         </script>";
         
-        // 세션 변수 생성
-        $_SESSION["login_idx"] = $send["idx"];
-        $_SESSION["login_name"] = $send["u_name"];
-        $_SESSION["login_id"] = $send["u_id"];
-        $_SESSION["login_pwd"] = $send["pwd"];
-    };
+        
+    }; 
 };
 
 // DB 종료
 mysqli_close($dbcon);
 
 //리디랙션
-// echo "
-//     <script type='text/javascript'>
-//     location.href='login_ok.php';
-//     </script>
-// ";
+echo "
+    <script type='text/javascript'>
+    location.href='login_ok.php';
+    </script>
+";
 
 ?>

@@ -53,6 +53,14 @@
     /* padding: 50px; */
 }
 
+.table_cate{
+    width: 180px;
+}
+
+.table_title{
+    width: 770px;
+}
+
 .table tr td{
     cursor: pointer;
 }
@@ -123,3 +131,11 @@ tr{
     margin-right: 20px;
 }
 
+.pager{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.admin_write{
+    margin-left: 42px;
+}

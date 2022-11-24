@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="../../css/basic.css">
 <footer id="footer" class="footer">
     <h2 class="blind">사이트 이용 안내</h2>
         <div class="customer_service">

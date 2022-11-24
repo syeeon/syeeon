@@ -1,3 +1,8 @@
+<?php 
+
+$u_id = $_GET["u_id"];
+
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,7 +22,7 @@
             <legend>아이디 검색</legend>
             <p>
                 <label for="userId">입력</label>
-                <input type="text" name="userId" id="userId" value="admin">
+                <input type="text" name="userId" id="userId" value="<?php echo $u_id; ?>">
                 <button type="submit">버튼</button>
             </p>
         </fieldset>

@@ -18,20 +18,20 @@
             <p>장바구니에 담겨진 상품을 확인하실 수 있습니다. </p>
         </section>
         <section class="cartbox_wrap">
-            <a class="return" href="../shop.html">Return to shop </a>
-            <h2>Cart</h2>
+            <a class="return" href="../shop.php">Return to shop </a>
+            <h2>CART</h2>
             <ul class="cart_box">
-                <li>
+                <li class="cart_list">
                     <div class="img_box">
                         <img src="../../../../img/sub/shop/n1.png" alt="레저렉션 아로마틱 핸드 워시">
                     </div>
                     <div class="cart_txt">
                         <span class="list">레저렉션 아로마틱 핸드 워시</span>
                         <span class="list">DOWN</span>
-                        <input type="text" class="up_down list" value="**">
+                        <input type="text" class="up_down list" value="1">
                         <span class="list">UP</span>
-                        <button type="reset" class="del list">Remove</button>
-                        <span class="list">46,000KRW</span>
+                        <button type="reset" class="del list">REMOVE</button>
+                        <span>46,000KRW</span>
                     </div>
                 </li>
             </ul>

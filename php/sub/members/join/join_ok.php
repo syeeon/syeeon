@@ -1,3 +1,16 @@
+<?php
+$userid = $_GET['userid'];
+
+include "../../inc/session.php";
+// echo $u_id;
+// exit;
+include "../../inc/dbcon.php";
+$sql = "select * from members";
+// echo $sql;
+// exit;
+$send = mysqli_query($dbcon, $sql);
+$array = mysqli_fetch_array($send);
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -20,7 +33,7 @@
         <div class="box_wrop">
             <section class="content1">
                 <h2>가입이 완료되었습니다.</h2>
-                <p>Aesop 가입 ID는 ****입니다.</p>
+                <p class="name">Aesop 가입 ID는 <?php echo $userid; ?>입니다.</p>
             </section>
             <div class="btn_box">
                 <button class="btn_1" type="submit" onclick="location.href='../login/login.php'">로그인</button>
@@ -31,3 +44,4 @@
     <?php include "../../../common/footer.php" ?>
 </body>
 </html>
+<?php mysqli_close($dbcon); ?>

@@ -1,4 +1,5 @@
 /* content */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 #main{
     min-width: 1200px;
@@ -63,10 +64,32 @@
     transform: translateY(100%);
 }
 
+.err2_txt{
+    font-size: 14px;
+    color: #143259;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transform: translateY(100%);
+}
 
-.apply_txt{
+.err_apply{
+    font-size: 14px;
+    color: #143259;
     margin-left: 50px;
 }
+
+.err_pscode{
+    font-size: 14px;
+    color: #143259;
+    margin-left: 138px;
+    display: block;
+}
+
+.name{
+    font-family: 'Playfair Display', "Minerva-Modern", "Noto Sans KR", "Arial", "나눔고딕", "맑은 고딕", "돋움";
+}
+
 
 .texbox_1, .texbox_2, .texbox_3{
     padding:10px
@@ -80,11 +103,11 @@
 .text_wrap{
     display: inline-block;
     position: relative;
-    
 }
+
 .txt_box{
     height: 40px;
-    width: 250px;
+    width: 300px;
 } 
 
 .short_txt_box{
@@ -93,11 +116,9 @@
 } 
 
 .exp{
-    display: inline-block;
     font-size: 14px;
-    margin-top: 25px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     transform: translateY(100%);
 }
@@ -117,7 +138,7 @@
 
 
 .content2 div{
-    margin-top: 30px;
+    margin-top: 44px;
     margin-left: 60px;
 }
 
@@ -138,7 +159,7 @@
     font-weight: bold;
     color: #735646;
     margin-bottom: 40px;
-    margin-top:30px;
+    margin-top:60px;
 }
 
 .box_wrap{
@@ -149,9 +170,9 @@
     position: relative;
 }
 
-.texbox_1 p, strong , .texbox_2 p, span , .texbox_3 p {
+/* .texbox_1 p, strong , .texbox_2 p, span , .texbox_3 p {
     font-size: 13px;
-}
+} */
 
 .texbox_1{
     margin: auto;
