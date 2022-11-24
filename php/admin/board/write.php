@@ -83,6 +83,5 @@ include "../inc/session/php";
             </div>
         </div>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>

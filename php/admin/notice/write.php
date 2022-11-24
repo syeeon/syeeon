@@ -58,7 +58,7 @@ include "../inc/login_check.php";
                             <input type="text" id="ask" name="ask" class="txt_box">
                         </div>
                         <div class="input_box">
-                            <label for="answer" class="c_title text_title">ANSWER</label>
+                            <label for="answer" class="text_title">ANSWER</label>
                             <textarea id="answer" name="answer" class="u_content"></textarea>
                         </div>
 
@@ -71,6 +71,5 @@ include "../inc/login_check.php";
             </div>
         </div>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>

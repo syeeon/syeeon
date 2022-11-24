@@ -7,11 +7,11 @@
             <h1>SHOP</h1>
                 <h2>BODY&HAND </h2>
                     <ul class="lnb">
-                        <li><a class="hover-effect">모든 바디&핸드</a></li>
-                        <li><a class="hover-effect">핸드</a></li>
-                        <li><a class="hover-effect">바디</a></li>
-                        <li><a class="hover-effect">번들</a></li>
-                        <li><a class="hover-effect">핸드 및 바디케어 기프트</a></li>
+                        <li><a class="hover-effect_shop">모든 바디&핸드</a></li>
+                        <li><a class="hover-effect_shop">핸드</a></li>
+                        <li><a class="hover-effect_shop">바디</a></li>
+                        <li><a class="hover-effect_shop">번들</a></li>
+                        <li><a class="hover-effect_shop">핸드 및 바디케어 기프트</a></li>
                     </ul>
         </sectiion>
         <div class="prod_wrap">

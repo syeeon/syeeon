@@ -1,38 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-*, *::after, *::before {
+/* *, *::after, *::before {
     margin: 0px;
     padding: 0px;
     border: 0;
     font-size: 18px;
     font-weight: normal;
     box-sizing: border-box;
-}
+} */
 
 body {
     /* font-family: "Minion Var¬oiable Concept", "Minerva-Modern", "Noto Sans KR", "Arial", "나눔고딕", "맑은 고딕", "돋움"; */
-    font-family: "Cinzel", "Minerva-Modern", "Noto Sans KR", "Arial", "나눔고딕", "맑은 고딕", "돋움";
+    font-family: 'Playfair Display', "Minerva-Modern", "Noto Sans KR", "Arial", "나눔고딕", "맑은 고딕", "돋움";
+    font-weight: 400px;
     color: #000;
     background-color: #fffef2;
 }
 
-ul, li {
+ ul, li {
     list-style: none
 }
 
-a {
+/* a {
     text-decoration: none;
     color: inherit
-}
+}  */
 
-input,textarea{
+/* input,textarea{
     outline: none;
     padding: 10px;
 }
 
 address {
     font-style: normal
-}
+} */
 
 /* hide */
 

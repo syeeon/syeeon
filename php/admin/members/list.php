@@ -64,7 +64,7 @@ if($e_pageNum > $total_page){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFO</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/basic.css"> 
+    <link rel="stylesheet" type="text/css" href="../../../css/admin/admin_basic.css"> 
     <link rel="stylesheet" type="text/css" href="../../../css/sub/members/notice/notice.css">
     <script type="text/javascript" src="../../../js/common/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="../../../js/common/basic.js"></script>
@@ -166,7 +166,6 @@ if($e_pageNum > $total_page){
     <?php }; ?>
     </p>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>
 <?php mysqli_close($dbcon); ?>

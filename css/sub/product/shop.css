@@ -19,13 +19,13 @@ h2{
     font-size: 40px;
 }
 
-.hover-effect {
+.hover-effect_shop {
     display: inline-block;
     padding-bottom: 1px; 
     position: relative;
   }
   
-  .hover-effect::before {
+  .hover-effect_shop::before {
     content: "";
     position: absolute;
     left: 0;
@@ -35,7 +35,7 @@ h2{
     background-color: #333;
     transition: width 0.35s ease-out;
   }
-  .hover-effect:hover::before {
+  .hover-effect_shop:hover::before {
     width: 100%;
   }
 

@@ -25,7 +25,7 @@ $array = mysqli_fetch_array($send);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFO</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/basic.css"> 
+    <link rel="stylesheet" type="text/css" href="../../../css/admin/admin_basic.css"> 
     <link rel="stylesheet" type="text/css" href="../../../css/sub/members/board/write.css">
     <script type="text/javascript" src="../../../js/common/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="../../../js/common/basic.js"></script>
@@ -65,7 +65,7 @@ $array = mysqli_fetch_array($send);
                         </div>
                         <div class="input_box">
                             <label for="u_content" class="c_title text_title">내용</label>
-                            <textarea id="u_content" name="q_content"><?php echo $array["q_content"]; ?></textarea>
+                            <textarea id="u_content" name="q_content" class="u_content"><?php echo $array["q_content"]; ?></textarea>
                             <br><span id="err_content"  class="err_txt"></span>
                         </div>
                         <div class="input_box">
@@ -97,7 +97,6 @@ $array = mysqli_fetch_array($send);
             </div>
         </div>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>
 <?php mysqli_close($dbcon); ?>

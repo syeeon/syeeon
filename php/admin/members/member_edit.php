@@ -59,7 +59,7 @@ $array = mysqli_fetch_array($send);
                 
                                 <div class="input_box">
                                     <label for="u_id" class="c_title">아이디</label>
-                                    <span><?php echo $array["u_id"]; ?></span>
+                                    <span class="name"><?php echo $array["u_id"]; ?></span>
                                 </div>
 
                                 <div class="input_box">
@@ -110,8 +110,8 @@ $array = mysqli_fetch_array($send);
                                 <div class="input_box">
                                     <label for="email_id" class="c_title">이메일</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="email_id" name="email_id" class="txt_box" value="<?php echo $email[0] ?>"> @
-                                        <input type="text" id="email_dns" name="email_dns" class="txt_box" value="<?php echo $email[1] ?>">
+                                        <input type="text" id="email_id" name="email_id" class="txt_box name" value="<?php echo $email[0] ?>"> @
+                                        <input type="text" id="email_dns" name="email_dns" class="txt_box name" value="<?php echo $email[1] ?>">
                                         <select  id="email_sel" onchange="change_email()" class="txt_box">
                                             <option value="">직접입력</option>
                                             <option value="naver.com" class="box" >네이버</option>
@@ -132,14 +132,13 @@ $array = mysqli_fetch_array($send);
            
                 <div class="button_wrop">
                     <button class="accept" type="submit">확인</button>
-                    <button class="cancel" type="reset" onclick="location.href='histry.back()'">취소</button>
+                    <button class="cancel" type="reset" onclick="location.href='list.php'">취소</button>
                     <button class="cancel" type="reset" onclick="member_del()">회원탈퇴</button>
                 </div>
                     </fieldset>
                 </form>
         </section>                    
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>
 <?php mysqli_close($dbcon); ?>

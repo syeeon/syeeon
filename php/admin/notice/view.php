@@ -89,6 +89,5 @@ mysqli_query($dbcon, $cntSql);
             </div>
         </div>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>

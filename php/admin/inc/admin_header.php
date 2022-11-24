@@ -2,7 +2,7 @@
 <header id="header" class="admin_header">
     <h1><a>aesop</a></h1>
     <div class="admin_top_menu">
-        <span>HELLO <?php echo $login_name; ?></span>
+        <p>HELLO <?php echo $login_name; ?></p>
         <a href="/syeeon/php/admin/login/logout.php">LOGOUT</a>
         <a href="#">MEMBER</a>
     </div>

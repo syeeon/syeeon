@@ -26,7 +26,7 @@ $array = mysqli_fetch_array($send);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFO</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/basic.css"> 
+    <link rel="stylesheet" type="text/css" href="../../css/admin/admin_basic.css"> 
     <link rel="stylesheet" type="text/css" href="../../../css/sub/members/board/write.css">
     <script type="text/javascript" src="../../../js/common/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="../../../js/common/basic.js"></script>

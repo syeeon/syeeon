@@ -29,7 +29,7 @@ $sql = "update board set cnt= $cnt where idx = $q_idx;";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFO</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/admin/admin_basic.css"> 
     <link rel="stylesheet" type="text/css" href="../../../css/sub/members/board/show_write.css">
 </head>
 <body>
@@ -99,7 +99,6 @@ $sql = "update board set cnt= $cnt where idx = $q_idx;";
             </div>
         </div>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>
 <?php mysqli_close($dbcon); ?>

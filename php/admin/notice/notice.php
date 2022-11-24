@@ -184,6 +184,5 @@ if($e_pageNum > $total_page){
     <?php }; ?>
     </p>
     </main>
-    <?php include "../../../common/footer.php" ?>
 </body>
 </html>
