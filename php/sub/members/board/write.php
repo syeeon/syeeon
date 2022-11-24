@@ -64,13 +64,13 @@ include "../../inc/login_check.php";
                         <div class="input_box">
                             <label for="u_title" class="c_title">제목</label>
                             <span class="text_wrap">
-                                <input type="text" id="u_title" name="q_title" class="txt_box u_title" placeholder="문의사항입니다.">
+                                <input type="text" id="u_title" name="q_title" class="txt_box u_title name" placeholder="문의사항입니다.">
                                 <span id="err_title"  class="err_txt"></span>
                             </span>
                         </div>
                         <div class="input_box">
                             <label for="u_content" class="c_title text_title">내용</label>
-                                    <textarea id="u_content" class="u_content" name="q_content" placeholder="내용을 입력해주세요."></textarea>
+                                    <textarea id="u_content" class="u_content name" name="q_content" placeholder="내용을 입력해주세요."></textarea>
                                     <p id="err_content"  class="err_content"></p>
                         </div>
                         <div class="input_box">

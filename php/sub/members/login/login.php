@@ -28,7 +28,7 @@
                         <div class="form1_wrap">
                             <div class="form1_box">
                                 <div class="input_box">
-                                    <input type="text" id="u_id" name="u_id" placeholder=" 아이디">
+                                    <input type="text" id="u_id" name="u_id" placeholder=" 아이디" class="name">
                                     <br><span id="err_id" class="err_txt"></span>
                                 </div>
                                 <div class="input_box">

@@ -33,11 +33,11 @@
                             <legend class="blind">아이디&비밀번호 찾기</legend>
                             <div class="input_box">
                                 <span class="text_wrap">
-                                    <input type="text" id="u_name" name="u_name" placeholder="이름">
+                                    <input type="text" id="u_name" name="u_name" placeholder="이름" class="name">
                                     <span id="err_name" class="err_txt"></span>
                                 </span>
                                 <span class="text_wrap">
-                                    <input type="email" id="u_email" name="u_email" placeholder="이메일주소">
+                                    <input type="email" id="u_email" name="u_email" placeholder="이메일주소" class="name">
                                     <span id="err_email" class="err_txt"></span>
                                 </span>
                             </div>

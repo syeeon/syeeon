@@ -100,8 +100,8 @@
                                 <div class="input_box">
                                     <label for="email_id" class="c_title">이메일</label>
                                     <span class="text_wrap">
-                                        <input type="text" id="email_id" name="email_id" size="12" class="txt_box"> @
-                                        <input type="text" id="email_dns" name="email_dns" size="12" class="txt_box">
+                                        <input type="text" id="email_id" name="email_id" size="12" class="txt_box name"> @
+                                        <input type="text" id="email_dns" name="email_dns" size="12" class="txt_box name">
                                         <select  id="email_sel" onchange="change_email()" class="txt_box">
                                             <option value="">직접입력</option>
                                             <option value="naver.com" class="box" >네이버</option>

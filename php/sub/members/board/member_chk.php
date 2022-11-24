@@ -56,8 +56,7 @@ $array = mysqli_fetch_array($send);
                 <fieldset>
                     <legend class="blind">비밀번호 재확인</legend>
                         <div class="input_box">
-                            
-                            <span class="title_pwd">비밀번호</span>
+                            <span class="">비밀번호</span>
                             <input type="password" id="pwd" name="pwd" class="txt_box">
                             <span id="err_pwd" class="err_txt"></span>
                         </div>

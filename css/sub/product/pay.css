@@ -90,6 +90,7 @@
     width: 300px;
     position: relative;
     left: 760px;
+    margin-top: 30px;
 }
 
 
@@ -213,6 +214,7 @@
     background: #735646;
     color: #fff;
     float: right;
+    margin-bottom: 30px;
 
 }
 

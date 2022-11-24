@@ -96,7 +96,7 @@ text-align: left;
     height: 23px;
     vertical-align: middle;
     margin-right: 10px;
-    background: url(/img/sub/q&a/icon_id.png) no-repeat 0;
+    background: url(/syeeon/img/sub/q&a/icon_id.png) no-repeat 0;
 }
 
 .icon2::before{
@@ -106,7 +106,7 @@ text-align: left;
     height: 18px;
     vertical-align: middle;
     margin-right: 10px;
-    background: url(/img/sub/q&a/icon_time.png) no-repeat 0;
+    background: url(/syeeon/img/sub/q&a/icon_time.png) no-repeat 0;
 }
 
 .icon3::before{
@@ -116,7 +116,7 @@ text-align: left;
     height: 14px;
     vertical-align: middle;
     margin-right: 10px;
-    background: url(/img/sub/q&a/icon_view.png) no-repeat 0;
+    background: url(/syeeon/img/sub/q&a/icon_view.png) no-repeat 0;
 }
 
 .content{

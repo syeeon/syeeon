@@ -116,8 +116,8 @@ input[type=file]{
 }
 
 .file_box{
-    width: 350px;
-    margin-left: calc(100% - 320px);
+    width: 370px;
+    margin-left: calc(100% - 370px);
     display: inline-block;
 }
 

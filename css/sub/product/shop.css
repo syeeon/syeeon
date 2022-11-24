@@ -112,11 +112,16 @@ h2{
 
 /* add to cart */
 
-.cart{
-    width: 400px;
-    height: 200px;
+
+.cart {
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
     text-align: center;
     position: relative;
+    padding: 10px;
 }
 
 .cart_tit{
@@ -160,14 +165,7 @@ h2{
     left: 0;    
     top: 0;
 }
-.cart {
-    background: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:400px;
-    height: 200px;
-}
+
 
 .cart_in, .back{
     background-color: #fffef2;

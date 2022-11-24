@@ -255,6 +255,7 @@
 }
 
 .button_wrop{
+    margin-top: 60px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
