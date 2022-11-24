@@ -1,5 +1,6 @@
 <?php
 include "../inc/session.php";
+include "../inc/login_check.php";
 
 // DB 연결
 include "../inc/dbcon.php";

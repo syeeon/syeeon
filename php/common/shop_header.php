@@ -65,7 +65,7 @@ include "../inc/session.php";
                 <?php } if(!$login_id){ ?>
                     <li class="menu n2"><a class="underline-hover-effect" href="/syeeon/php/sub/members/login/login.php">LOGIN</a></li>
                     <?php }; ?>
-                <li class="menu n3"><a class="underline-hover-effect"  href="#">CART(0)</a></li>
+                <li class="menu n3"><a class="underline-hover-effect"  href="/syeeon/php/sub/product/cart/cart_none.php">CART(0)</a></li>
             </ul>
         </div>
         <div class="nav_bg"></div> 

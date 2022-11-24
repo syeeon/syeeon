@@ -1,6 +1,7 @@
 <?php
 
 include "../../inc/session.php";
+include "../../inc/login_check.php";
 
 // echo $login_id;
 // exit;

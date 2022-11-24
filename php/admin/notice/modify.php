@@ -1,5 +1,6 @@
 <?php 
 include "../inc/session.php";
+include "../inc/login_check.php";
 
 $n_idx = $_GET["n_idx"];
 
