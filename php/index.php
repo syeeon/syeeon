@@ -207,11 +207,11 @@
                 </div>
             </div>
                 <div class="arrow_wrap">
-                <button type="button" data-role="none" class="content_3-prev" aria-label="previous" >Previous</button>
-                <button type="button" data-role="none" class="content_3-next" aria-label="next" >Next</button>
-                </div>
-                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                    <span class="slider__label sr-only"></span>
+                    <button type="button" data-role="none" class="content_3-prev" aria-label="previous" >Previous</button>
+                    <button type="button" data-role="none" class="content_3-next" aria-label="next" >Next</button>
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <span class="slider__label sr-only"></span>
+                    </div>
                 </div>
             </div>
 

@@ -30,7 +30,7 @@ $array = mysqli_fetch_array($send);
             <a class="return" href="shop.php">Return to shop</a>
             <h2 class="cart_title">Cart</h2>
             <ul class="cart_box">
-                <li>
+                <li class="cart_list">
                     <div class="img_box">
                         <img src="../../../img/sub/shop/n1.png" alt="레저렉션 아로마틱 핸드 워시">
                     </div>
@@ -40,7 +40,7 @@ $array = mysqli_fetch_array($send);
                         <input type="text" class="up_down list" value="**">
                         <span class="list">UP</span>
                         <button type="reset" class="del list">Remove</button>
-                        <span class="list">46,000KRW</span>
+                        <span>46,000KRW</span>
                     </div>
                 </li>
             </ul>
@@ -76,8 +76,8 @@ $array = mysqli_fetch_array($send);
                                 ?>
                                 <label for="email" class="c_title">이메일</label>
                                 <span class="text_wrap">
-                                    <input type="text" id="email_id" name="email" class="txt_box" value="<?php echo $email[0]; ?>"> @
-                                    <input type="text" id="email_dns" name="email_dns" class="txt_box" value="<?php echo $email[1]; ?>">
+                                    <input type="text" id="email_id" name="email" class="txt_box name" value="<?php echo $email[0]; ?>"> @
+                                    <input type="text" id="email_dns" name="email_dns" class="txt_box name" value="<?php echo $email[1]; ?>">
                                     <select  id="email_sel" onchange="change_email()" class="txt_box">
                                         <option value="">직접입력</option>
                                         <option value="naver.com" class="box" >네이버</option>

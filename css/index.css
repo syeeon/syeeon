@@ -404,7 +404,7 @@ font-weight: 500;
   .content_3-prev{
     position: relative;
     left: 430px;
-    top:50%;
+    top:-270px;
     transform: translateY(-50%);
     width: 30px;
     height: 51px;
@@ -413,9 +413,10 @@ font-weight: 500;
   }
 
 .content_3-next{
+    background-color: red;
     position: relative;
-    left: 1140px;
-    top:50%;
+    left: 1138px;
+    top:-270px;
     transform: translateY(-50%);
     width: 30px;
     height: 51px;
@@ -428,7 +429,7 @@ font-weight: 500;
       height: 5px;
       border-radius: 10px;
       float: right;
-      margin: 20px 0 80px;
+      margin: 0 0 80px;
       
       
       background-color: #f5f5f5;
