@@ -17,7 +17,7 @@ $birth = $_POST["birth"];
 // 가입 일자 구하기
 $join_date = date("Y-m-d");
 
-//값 확인해보기
+// 값 확인해보기
 // echo "<p> 이름 : " .$u_name."</p>";
 // echo "<p> 아이디 : " .$u_id."</p>";
 // echo "<p> 비밀번호 : " .$pwd."</p>";

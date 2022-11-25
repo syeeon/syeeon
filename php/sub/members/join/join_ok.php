@@ -2,7 +2,6 @@
 $userid = $_GET['userid'];
 
 include "../../inc/session.php";
-include "../../inc/login_check.php";
 // echo $u_id;
 // exit;
 include "../../inc/dbcon.php";

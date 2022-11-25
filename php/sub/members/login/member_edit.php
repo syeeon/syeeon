@@ -130,7 +130,7 @@ if($pwd != $login_pwd){
            
                 <div class="button_wrop">
                     <button class="accept" type="submit">확인</button>
-                    <button class="cancel" type="reset" onclick="location.href='histry.back()'">취소</button>
+                    <button class="cancel" type="reset" onclick="location.href='login_ok.php'">취소</button>
                     <button class="cancel" type="reset" onclick="member_del()">회원탈퇴</button>
                 </div>
                     </fieldset>

@@ -37,7 +37,7 @@ $array = mysqli_fetch_array($send);
                     <div class="cart_txt">
                         <span class="list">레저렉션 아로마틱 핸드 워시</span>
                         <span class="list">DOWN</span>
-                        <input type="text" class="up_down list" value="**">
+                        <input type="text" class="up_down list" value="1">
                         <span class="list">UP</span>
                         <button type="reset" class="del list">Remove</button>
                         <span>46,000KRW</span>
