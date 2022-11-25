@@ -38,11 +38,6 @@ $array = mysqli_fetch_array($send);
     <main class="main">
         <section class="content1">
             <h1>NOTICE</h1>
-            <p>쇼핑에 필요한 정보를 신속하게 전해드립니다.</p>
-            <div class="lnb">
-                <button class="tit_btn tit1" type="button" onclick="location.href='notice.php'">NOTICE</button>
-                <button class="tit_btn tit2" type="button" onclick="location.href='../board/list.php'">Q&A</button>
-            </div>
         </section>
         <div class="write_wrap">
             <div class="write_box">
@@ -74,7 +69,7 @@ $array = mysqli_fetch_array($send);
                             <input type="text" id="ask" name="ask" class="txt_box" value="<?php echo $array["ask"]; ?>">
                         </div>
                         <div class="input_box">
-                            <label for="answer" class="c_title text_title">ANSWER</label>
+                            <label for="answer" class="c_title">ANSWER</label>
                             <textarea id="answer" name="answer" class="u_content"><?php echo $array["answer"]; ?></textarea>
                         </div>
 

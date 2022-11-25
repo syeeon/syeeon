@@ -29,6 +29,7 @@ $array = mysqli_fetch_array($send);
     <script type="text/javascript" src="../../../js/common/jquery-3.6.1.min.js"></>
     <script type="text/javascript" src="../../../js/common/basic.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script type="text/javascript" src="../../../js/sub/member_edit.js"></script>
 
     <script>
     function member_del(){
