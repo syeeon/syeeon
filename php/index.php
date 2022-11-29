@@ -137,10 +137,6 @@
                 <span class="slider__label1 sr-only1"></span>
             </div>
         </section>
-            <!-- <div class="arrow_best_wr">
-                <button type="button" data-role="none" class="best-prev" aria-label="previous" >Previous</button>
-                <button type="button" data-role="none" class="best-next" aria-label="next" >Next</button>
-            </div> -->
 
 
 
@@ -206,14 +202,14 @@
                     <p>이솝 한남</p>
                 </div>
             </div>
-                <div class="arrow_wrap">
-                    <button type="button" data-role="none" class="content_3-prev" aria-label="previous" >Previous</button>
-                    <button type="button" data-role="none" class="content_3-next" aria-label="next" >Next</button>
-                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                        <span class="slider__label sr-only"></span>
-                    </div>
+            <div class="arrow_wrap">
+                <button type="button" data-role="none" class="content_3-prev" aria-label="previous" >Previous</button>
+                <button type="button" data-role="none" class="content_3-next" aria-label="next" >Next</button>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <span class="slider__label sr-only"></span>
                 </div>
             </div>
+        </div>
 
         <section class="notice">
             <h2 class="item1"><a href="sub/members/notice/notice.php">NOTICE</a></h2>

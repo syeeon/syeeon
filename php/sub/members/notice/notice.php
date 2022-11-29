@@ -125,12 +125,7 @@ if($e_pageNum > $total_page){
                         }; 
                     ?>
             </table>
-            <?php if($login_id == "admin"){ ?>
-            <p class="admin_write">
-                <span>TOTAL<?php echo $total; ?></span>
-                <span><a href="write.php">글쓰기</a></span>
-            </p>
-            <?php }; ?>
+
             <p class="pager">
             <?php
             // pager : 이전 페이지

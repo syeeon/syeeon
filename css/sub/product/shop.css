@@ -40,17 +40,16 @@ h2{
   }
 
 .lnb{
-    display: inline-block;
+    display: flex;
     width: 100%;
     background-color: #ebeade;
     line-height: 120px;
     height: 120px;
-    padding: 0 50px;
+    justify-content :center
 }
 
 .lnb>li{
-    margin-right: 40px;
-    float: left;
+    margin: 0 40px;
 }
 
 .prod_wrap{

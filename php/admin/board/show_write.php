@@ -67,7 +67,7 @@ $sql = "update board set cnt= $cnt where idx = $q_idx;";
                 </table>
                 <div class="btn_left">
                     <button class="riv" onclick="location.href='modify.php?q_idx=<?php echo $q_idx; ?>'">수정</button>
-                    <button class="del">삭제</button>
+                    <button class="riv" onclick="location.href='delete.php?q_idx=<?php echo $q_idx; ?>'">삭제</button>
                 </div>
                 <div class="btn_right">
                     <button class="btn btn_2" type="button" onclick="location.href='list.php'">목록보기</button>

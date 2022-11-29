@@ -54,14 +54,12 @@ include "sub/inc/session.php";
         <div class="top_menu">
             <h2 class="blind">사용자 메뉴</h2>
             <ul>
-                <!-- <li class="menu n1"><a href="#">SEARCH</a></li> -->
                 <li class="menu n1">        
                     <div>
-                        <form>
+                        <form name="searhForm" action="" method="get">
                             <fieldset>
                             <legend class="blind">검색</legend>
                             <input type="text" class="n1_input" placeholder="SEARCH" >
-                            <!-- <button type="button">검색</button> -->
                             </fieldset>
                         </form>
                     </div>
@@ -69,22 +67,13 @@ include "sub/inc/session.php";
                 <?php if($login_id){  ?>
                 <li class="menu n2"><a class="underline-hover-effect" href="/syeeon/php/sub/members/login/login_ok.php">MY AESOP</a></li>
                 <?php } if(!$login_id){ ?>
-                    <li class="menu n2"><a class="underline-hover-effect" href="/syeeon/php/sub/members/login/login.php">LOGIN</a></li>
-                    <?php }; ?>
+                <li class="menu n2"><a class="underline-hover-effect" href="/syeeon/php/sub/members/login/login.php">LOGIN</a></li>
+                <?php } if($login_id == "admin"){ ?>
+                <li class="menu n3"><a class="underline-hover-effect" href="/syeeon/php/admin/index.php">ADMIN</a></li>
+                <?php };  ?>
                 <li class="menu n3"><a class="underline-hover-effect"  href="/syeeon/php/sub/product/cart/cart_none.php">CART(0)</a></li>
             </ul>
         </div>
         <div class="nav_bg"></div> 
     </div>
-    
-    <!-- <div>
-        <form>
-            <fieldset>
-                <legend class="blind">검색</legend>
-                <input type="text">
-                <button type="button">검색</button>
-            </fieldset>
-            
-        </form>
-    </div> -->
 </header>

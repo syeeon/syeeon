@@ -23,7 +23,7 @@ $total = mysqli_num_rows($send);
 // exit;
 
 // paging : 한 페이지 당 보여질 목록 수
-$list_num = 5;
+$list_num = 10;
 
 // paging : 한 블럭 당 페이지 수
 $page_num = 2;

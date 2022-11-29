@@ -35,9 +35,9 @@
                         <img src="../../../img/sub/shop/n2.png" alt="레버런스 아로마틱 핸드 워시">
                     </div>
                     <dl class="prod_txt">
-                    <dt>레버런스 아로마틱 핸드 워시</dt>
-                    <dd>500ML 46,000KRW</dd>
-                    <dd>우드, 흙내음, 스모키</dd>
+                        <dt>레버런스 아로마틱 핸드 워시</dt>
+                        <dd>500ML 46,000KRW</dd>
+                        <dd>우드, 흙내음, 스모키</dd>
                     </dl>
                 </a>
                 <button type="button" class="cart_btn">Add to cart</button>
@@ -49,9 +49,9 @@
                         <img src="../../../img/sub/shop/n3.png" alt="레저렉션 아로마틱 핸드 밤">
                     </div>
                     <dl class="prod_txt">
-                    <dt>레저렉션 아로마틱 핸드 밤</dt>
-                    <dd>75ML 31,000KRW</dd>
-                    <dd>시트러스, 우드, 허브</dd>
+                        <dt>레저렉션 아로마틱 핸드 밤</dt>
+                        <dd>75ML 31,000KRW</dd>
+                        <dd>시트러스, 우드, 허브</dd>
                     </dl>
                 </a>
                 <button type="button" class="cart_btn">Add to cart</button>
