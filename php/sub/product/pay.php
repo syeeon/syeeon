@@ -1,8 +1,6 @@
 <?php 
 
-include "../inc/session.php";
 include "../inc/dbcon.php";
-
 
 $sql = "select * from members;";
 // echo $sql;
@@ -15,8 +13,7 @@ $array = mysqli_fetch_array($send);
 ?>
 
 
-<title>결제하기</title>
-</head>
+
 <body>
     <?php include "../../common/shop_header.php" ?>
     <link rel="stylesheet" type="text/css" href="../../../css/sub/product/pay.css"> 
@@ -36,11 +33,8 @@ $array = mysqli_fetch_array($send);
                     </div>
                     <div class="cart_txt">
                         <span class="list">레저렉션 아로마틱 핸드 워시</span>
-                        <span class="list">DOWN</span>
-                        <input type="text" class="up_down list" value="1">
-                        <span class="list">UP</span>
-                        <button type="reset" class="del list">Remove</button>
-                        <span>46,000KRW</span>
+                        <p class="list up_down count">1</p>
+                        <span>46,000</span>
                     </div>
                 </li>
             </ul>
@@ -50,7 +44,7 @@ $array = mysqli_fetch_array($send);
                     <span>46,000</span>
                 </span>
                 <span><label>배송비</label><span>0</span></span>
-                <span><label>TATAL</label><span>46,000KRW</span></span>
+                <span><label>TATAL</label><span>46,000</span></span>
             </span>
         <section class="content2">
             <form name="payForm" action="" method="post" onsubmit="return formCheck()">
@@ -95,30 +89,28 @@ $array = mysqli_fetch_array($send);
                             <div class="input_box">
                                 <label for="u_name" class="c_title">이름</label>
                                 <span class="text_wrap">
-                                    <input type="text" id="u_name" name="u_name" class="txt_box name_val">
+                                    <input type="text" id="u_name" name="u_name" class="txt_box name_val name">
                                     <span id="err_name" class="err_txt"></span>
                                 </span>
                             </div>
                             <div class="input_box">
-                                    <label for="address1" class="c_title">우편번호</label>
-                                    <input type="text"  id="sample6_postcode" name="sample6_postcode" size="8px" class="short_txt_box">
-                                    <button type="button" class="chk_btn" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">우편번호 검색</button>
-                                    <span id="err_psCode" class="err_pscode"></span>
-                                </div>
+                                <label for="address1" class="c_title">우편번호</label>
+                                <input type="text"  id="sample6_postcode" name = "sample6_postcode" size="8px" class="short_txt_box">
+                                <button type="button" class="chk_btn" onclick = "sample6_execDaumPostcode()" value="우편번호 찾기">우편번호 검색</button>
+                                <span id="err_psCode" class="err_pscode"></span>
+                            </div>
 
-                                <div class="input_box"> 
-                                    <label for="sample6_address" class="c_title">기본주소</label>
-                                    <input type="text" id="sample6_address" name="sample6_address" class="txt_box">
-                                </div>
-                                <div class="input_box">
-                                    <label for="sample6_detailAddress" class="c_title">상세주소</label>
-                                    <span class="text_wrap">
-                                    <input type="text" id="sample6_detailAddress" name="sample6_detailAddress" class="txt_box">
-                                        <span id="err_addr_d" class="err_txt"></span>
-                                    </span>
-                                 
-                                </div>
-                                <span id="err_addr" class="err_txt"></span>
+                            <div class="input_box"> 
+                                <label for="sample6_address" class="c_title">기본주소</label>
+                                <input type="text" id="sample6_address" name="sample6_address" class="txt_box">
+                            </div>
+                            <div class="input_box">
+                                <label for= "sample6_detailAddress" class="c_title">상세주소</label>
+                                <span class = "text_wrap">
+                                <input type = "text" id="sample6_detailAddress" name="sample6_detailAddress" class="txt_box name">
+                                    <span id="err_addr_d" class="err_txt"></span>
+                                </span>
+                            </div>
 
                             <div class="input_box phone">
                             <label for="mobile" class="c_title">연락처 1</label>
@@ -203,7 +195,7 @@ $array = mysqli_fetch_array($send);
                     <span><label>할인금액</label> <span>-0원</span></span>
                     <span><label>배송비</label> <span>0원</span></span>
                     <span><label>최종결제금액</label> <span>46,000원</span></span>
-                    <button type="submit" class="btn" onclick="payEnd()">결제하기 </button>
+                    <button type="submit" class="btn">결제하기 </button>
                 </span>
             </fieldset>
         </section>

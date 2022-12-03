@@ -28,7 +28,7 @@
 }
 
 .input_box{
-    width: 340px;
+    width: 360px;
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -46,11 +46,6 @@
 .txt_box{
     border: 1px solid #ddd;
 }
-
-/* form */
-/* .title_pwd{
-    margin:0 10px 20px;
-} */
 
 
 .err_txt{

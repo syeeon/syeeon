@@ -464,7 +464,7 @@ padding-top: 10px;
 
 /* store slide */
 
-.store_wrap:hover+.arrow_wrap>.content_3-prev{
+.content_3-prev{
 position: relative;
 left: 430px;
 top:-270px;
@@ -475,7 +475,7 @@ text-indent: -9999px;
 background: url(../img/index/icon_prev_arrow.png) no-repeat center #555;
 }
 
-.store_wrap:hover+.arrow_wrap>.content_3-next{
+.content_3-next{
 position: relative;
 left: 1035px;
 top:-270px;

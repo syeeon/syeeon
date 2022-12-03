@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../../../css/basic.css"> 
     <link rel="stylesheet" type="text/css" href="../../../../css/sub/product/cart/cart_have.css">
-    <script type="text/javascript" src="../../../../js/common/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="../../../../js/common/basic.js"></script>
+    <script src="../../../../js/common/jquery-3.6.1.min.js"></script>
+    <script src="../../../../js/common/basic.js"></script>
+    <script src="../../../../js/sub/cart_have.js"></script>
     <title>장바구니</title>
+
+
 </head>
 <body>
     <?php include "../../../common/header.php" ?>
@@ -27,21 +30,21 @@
                     </div>
                     <div class="cart_txt">
                         <span class="list">레저렉션 아로마틱 핸드 워시</span>
-                        <span class="list">DOWN</span>
-                        <input type="text" class="up_down list" value="1">
-                        <span class="list">UP</span>
+                        <a href="#" class="list">DOWN</a>
+                        <p class="list up_down count">1</p>
+                        <a href="#" class="list plus">UP</a>
                         <button type="reset" class="del list">REMOVE</button>
-                        <span>46,000KRW</span>
+                        <span class="unitprice">46,000</span>
                     </div>
                 </li>
             </ul>
             <span class="price">
                 <span>
                     <label>소계</label>
-                    <span>46,000</span>
+                    <span class="total">46,000</span>
                 </span>
                 <span><label>배송비</label><span>0</span></span>
-                <span><label>TATAL</label><span>46,000KRW</span></span>
+                <span><label>TATAL</label><span>46,000</span></span>
                 <button type="submit" class="btn" onclick="location.href='../pay.php'">결제하기 </button>
             </span>
         </section>
