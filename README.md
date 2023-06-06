@@ -12,12 +12,9 @@
 </div>
 
 <div align="center"> 
-	<h3>About Me 🧑🏻‍💻</h3>
+	<h3>About Me 👩</h3>
 		<a href="https://velog.io/@syeeon">
 		<img src="https://img.shields.io/badge/Velog-20C997?style=flat&logo=Velog&logoColor=white" /></a>
-		<a href="https://www.instagram.com/hyuuuk___/">
-		<img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&logoColor=white" />
-		</a>
 		<a href="mailto:glsy1150@gmail.com">
 		<img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=Gmail&logoColor=white" />
 		</a>
